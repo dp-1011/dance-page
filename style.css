@@ -1,0 +1,179 @@
+*{
+    font-family: poppins;
+    background-color: #F5F2F0;
+    color: #8C8C8C;
+}
+body{
+    display: flex;
+    justify-content:space-around;
+}
+
+/* ---------------left---------- */
+.logo{
+    z-index: 2;
+    position: absolute;
+    left: 100px;
+    top: 70px;
+}
+.logo:hover{
+    filter: invert(1);
+}
+
+.dancer1{
+    z-index: 1;
+    width: 550px;
+    position: relative;
+    right:120px;
+    bottom: 10px;
+}
+
+/* ------------right---------------- */
+
+.list1{
+    display: flex;
+    list-style-type: none;
+}
+.list-item{
+    padding-right: 50px;
+}
+.list-item:hover,.package:hover{
+    color: black;
+}
+
+.icon{
+    width: 50px;
+    border-radius: 50px;
+}
+.icon:hover{
+    border-radius: 10px;
+}
+.one{
+
+    font-size: 100px;
+    font-weight: 800;
+}
+.crea{
+    color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  position: relative;
+  right: 250px;
+}
+.tivity{
+    position: relative;
+    right: 150px;
+}
+.ingredient{
+    font-size: 40px;
+    position: relative;
+    left: 200px;
+    bottom: 130px;
+    width:250px;
+}
+.socials{
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 400px;
+    right: 0px;
+}
+.package{   
+color: white;
+background-color: #333333;
+padding: 15px 45px 15px 45px;
+font-size: 20px;
+}
+.check{
+    position: absolute;
+    top: 350px;
+    right: 50px;
+}
+.list2{
+    position:absolute;
+    left: 580px;
+    bottom: 10px;
+    background-color: transparent;
+}
+.list2item{
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+.list2item:hover{
+    color: #000;
+}
+.quote{
+    position: absolute;
+    top: 420px;
+    left: 850px;
+    color: black;
+}
+.grp-dance{
+    width: 400px;
+}
+.arr{
+    width: 100px;
+    position: relative;
+    left: 500px;
+    top: 100px;
+    object-fit: cover;
+}
+.line1{
+    width: 300px;
+    border-top: 2px solid black;
+    position: absolute;
+    left: 640px;
+    top: 35px;
+}
+.line2{
+    height: 300px;
+    border-left:1px solid black ;
+    position: absolute;
+    bottom :20px;
+    right: 935px;
+}
+.menu{
+    display: none;
+}
+@media only screen and (max-width:600px){
+    html{
+        width: 600px;
+    }
+    body{
+        flex-direction: column-reverse;
+    }
+    .dancer1, nav, .ingredient, .arr, .socials{
+        display: none;
+    }
+    .menu{
+        display: block;
+        position: relative;
+        left: 500px;
+        top: 50px;
+        margin: 0px;
+    }
+    .one{
+        position: relative;
+        left: 300px;
+        top: 100px;
+    }
+    .quote{
+        position: absolute;
+        left: 100px;
+    }
+    .check{
+        position: relative;
+        left: 500px;
+        width: fit-content;
+    }
+    .package{
+        width: fit-content;
+    }
+    .list2{
+        position: relative;
+        bottom: 250px;
+        width: fit-content;
+    }
+    .list2item{
+        width: 100px;
+    }
+}
